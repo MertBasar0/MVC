@@ -1,0 +1,20 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model WebApplication14_FluentValidation.Models.Person
+
+
+<form asp-action="index" asp-controller="Person" method="post">
+    <input type="text" asp-for="ıd" placeholder="id"/>
+    <span asp-validation-for="ıd"></span>
+    <input type="text" asp-for="Name" placeholder="Name"/>
+    <span asp-validation-for="Name"></span>
+    <input type="text" asp-for="Email" placeholder="mail"/>
+    <span asp-validation-for="Email"></span>
+    <input type="text" asp-for="Telefon" placeholder="telefon"/>
+    <span asp-validation-for="Telefon"></span>
+    <input type="text" asp-for="CreditCard" placeholder="Name"/>
+    <span asp-validation-for="CreditCard"></span>
+     <input type="text" asp-for="Yas" placeholder="yas"/>
+    <span asp-validation-for="Yas"></span>
+
+    <button type="submit">Gonder</button>
+</form>

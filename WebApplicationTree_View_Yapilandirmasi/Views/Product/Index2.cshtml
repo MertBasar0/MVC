@@ -1,0 +1,11 @@
+﻿@*as ile gelecek olan türü belirtme sebebimiz viewbag data runtime esnasında dynamic olarak oluşturulacağı için bu 
+esnada çalışacağı tipi bildirmem. Bildirmezsem product nokta dediğinizde prop'ları göremezsiniz.*@
+
+
+
+
+@foreach (var item in ViewBag.Products as List<WebApplicationTree_View_Yapilandirmasi.Models.Product>)
+{
+    <li>@item.Id</li>
+    <li>@item.ProductName</li>
+}

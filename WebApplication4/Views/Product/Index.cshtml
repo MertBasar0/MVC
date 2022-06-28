@@ -1,0 +1,23 @@
+﻿@using WebApplication4.Extensions_ozelhtmlTagHelper_
+
+Url oluşturur. Bu oluşturduğu render ederken bunu a taglarinin arasına yerleştirir.
+@Html.ActionLink("Anasayfa","Index","Product")
+
+@Html.TextArea("asafa")
+
+
+@Html.Partial("~/Views/Product/Partials/ListPartial.cshtml")
+
+@{
+    Html.RenderPartial("~/Views/Product/Partials/ListPartial.cshtml");
+}
+
+@*
+html Helper metotlar*@
+
+@Html.BeginForm()
+@Html.CheckBox("tt")
+@Html.TextBox("txt")
+@Html.Display("asf")
+@*@Html.CustomTextBox()*@
+

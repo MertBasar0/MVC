@@ -1,0 +1,10 @@
+﻿<h1>TempData</h1>
+
+
+<ul>
+    @foreach (var item in (List<WebApplicationTree_View_Yapilandirmasi.Models.Product>)TempData["products"])
+   {
+       <li>@item.Id</li>
+       <li>@item.ProductName</li>
+   }
+</ul>

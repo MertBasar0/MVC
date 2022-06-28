@@ -1,0 +1,19 @@
+﻿@*Dinamik olarak model gönderdik layouttan farklı olarak bu partial model ile aldığı bilgiye göre bu web sayfası doldurulacak.*@
+
+
+@model List<SliderVM>
+
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            @item.Name
+            <img src="@item.Url"/>
+        </li>
+        
+    }
+
+</ul>
+@*
+Home klasör altında bazı sayfalar aynı tasarımla*@

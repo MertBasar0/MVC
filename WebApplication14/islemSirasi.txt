@@ -1,0 +1,8 @@
+﻿1)Entity oluşturduk.
+2)Fluent Validation nuget pacg. yükle
+3)Burada 9.3.0 sürümünü kurduk.
+4)Servisler startup dosyasına ekledik => .addFluentValidation(x=>x.RegisterValidatorsFromAssemblyContaining<StartUp>());
+5)Models içerisindeki alana validators adında klasör açılır.
+6)Class oluşturulur ve abstract validator'dan miras alınır.
+7)Sonrasında ise ilgili validator classının içerisine gelinerek yapıcı(ctor) metodu açılır. 
+Bu metot içerisinde rulefor'lar ile ilgili prop seçilir ve onlara istenilen kurallar yazılır.

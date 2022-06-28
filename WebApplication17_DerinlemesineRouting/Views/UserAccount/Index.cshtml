@@ -1,0 +1,15 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.TagHelpers
+@model WebApplication17_DerinlemesineRouting.Models.UserInfoVm.UserInfoVM
+
+
+<ul>
+    <li>@Model.UserName</li>
+    <li>@Model.Email</li>
+    <li>@Model.InformationText</li>
+    <ul>
+    @foreach (var item in Model.Roles)
+    {
+         <li>@item</li>
+    }
+    </ul>
+</ul>

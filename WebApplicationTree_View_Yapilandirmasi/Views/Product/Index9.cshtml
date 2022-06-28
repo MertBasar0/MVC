@@ -1,0 +1,73 @@
+﻿<h1> 
+    Razor yapısını inceleyelim
+</h1>
+
+
+Razor nedir = Asp.net core mvc mimarisinde cshtml ile birlikte yazılan 'C#' kodlarını server tarafından çalıştırılmasını sağlayan teknolojinin adıdır.
+
+@*"@" operatörünün razor operatörüdür. c# kodu bekler*@
+
+@*razor ile değişken oluşturma*@
+
+@{
+    string deger = "Merhaba bilge adam";
+    Console.WriteLine(deger);
+}
+
+@{
+    int sayi = 1;
+}
+
+@*Razor içerisinde html kullanımı*@
+@{<html>
+    <head>
+    <title>
+    
+    </title>
+     </head>
+        <body>
+
+
+        </body>
+</html>
+
+}
+<br></br>
+
+
+@{
+    <h1>@(10+30)</h1>
+
+}
+
+@{
+        <h1>@(10%2 == 0 ? "cift" : "tek")</h1>
+}
+
+@*aşağıdaki gibi yapısal scopeları olan yapılar for,if,foreach,switch-case vs kendi scopları olan her
+yapı "@" operatörü bir kere koyarak yapının kendi parantezleri içersinde kodlarını yazabilir.*@
+@*
+@{
+    if (2 > 5)
+    {
+        <text> iki büyüktür beş</text>
+    }
+    else if(3<5)
+    {
+        <text>üç küçüktür beş</text>
+    }
+}
+
+
+@for (var i = 0; i < length; i++)
+{
+    
+};
+
+@foreach (var item in collection)
+{
+    
+};
+*@
+
+

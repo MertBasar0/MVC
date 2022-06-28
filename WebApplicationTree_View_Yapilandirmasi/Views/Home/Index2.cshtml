@@ -1,0 +1,28 @@
+﻿@model IEnumerable<WebApplicationTree_View_Yapilandirmasi.Models.Product>
+
+<h1>INDEX2</h1>
+<p>
+    <a asp-action = "Create">Yeni Oluştur.</a>
+</p>
+<table class = "table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Id)</th>
+            <th>@Html.DisplayNameFor(model => model.UnitPrice)</th>
+            <th>@Html.DisplayNameFor(model => model.ProductName)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelitem => item.Id)</td>
+                <td>@Html.DisplayFor(modelitem => item.UnitPrice)</td>
+                <td>@Html.DisplayFor(modelitem => item.ProductName)</td> 
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>

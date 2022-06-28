@@ -1,0 +1,48 @@
+﻿@*@model List<WebApplication9_Odev.Models.Product>*@
+@model WebApplication9_Odev.Models.Product
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="~/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+   <div class="container">
+  <div class="row">
+    <div class="col">
+        <form asp-action="Index" asp-controller="Product" method="post">
+          @*<input class="form-control" name="ProductName" type="text" placeholder="ProductName" aria-label="default input example">
+          <input class="form-control" name="SupplierID" type="number" placeholder="SupplierID" aria-label="default input example">
+          <input class="form-control" name="CategoryID" type="number" placeholder="CategoryID" aria-label="default input example">
+          <input class="form-control" name="UnitPrice" type="number" placeholder="UnitPrice" aria-label="default input example">
+          <button type="submit">Gonder</button>*@
+        <form/>
+         @* @foreach (var item in Model)
+        {
+            <ul>
+                <li>@item.ProductName</li>
+            </ul>
+        }*@
+        <form asp-controller="Demo" asp-action="RegisterInput" method="post">
+            Email:  <input asp-for="ProductName" /> <br />
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+  </div>
+</div>
+
+
+    <script src="~/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>

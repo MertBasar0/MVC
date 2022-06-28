@@ -1,0 +1,10 @@
+﻿<h1>ViewData</h1>
+@*
+as ile gelecek olan türü belirtme sebebimiz viewdata object tipinde döndürüleceği için karşılayacapım tipi cast 
+ediyorum veya as ile de bildirebilirsiniz.*@
+
+@foreach (var item in ViewData["product"] as List<WebApplicationTree_View_Yapilandirmasi.Models.Product>)
+{
+    <li>@item.Id</li>
+    <li>@item.ProductName</li>
+}

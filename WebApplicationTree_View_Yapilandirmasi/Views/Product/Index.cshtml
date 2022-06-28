@@ -1,0 +1,10 @@
+﻿@model List<WebApplicationTree_View_Yapilandirmasi.Models.Product>
+//Eğer model bazlı çalışılacaksa model belirtilir.
+
+
+//Büyük M'li model ile karşılanır.
+
+@foreach (var item in Model)
+{
+    <li>@item.ProductName</li>
+}

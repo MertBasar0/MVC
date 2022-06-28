@@ -1,0 +1,61 @@
+﻿@model WebApplication18_Authentication_Autorization.Models.DTOs.RegistorDTO
+@{
+Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<title>Register</title>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+
+ <div class="container">
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Register</h4>
+</div>
+<div class="card-body">
+<form asp-action="Register">
+<div class="form-group">
+<label asp-for="UserName" class="control-label"></label>
+<input asp-for="UserName" class="form-control" placeholder="User Name" />
+<span asp-validation-for="UserName" class="text-danger"></span>
+</div>
+<div class="form-group">
+<label asp-for="Email" class="control-label"></label>
+<input asp-for="Email" class="form-control" placeholder="Email" />
+<span asp-validation-for="Email" class="text-danger"></span>
+</div>
+<div class="form-group">
+<label asp-for="Password" class="control-label"></label>
+<input asp-for="Password" class="form-control" placeholder="Password" />
+<span asp-validation-for="Password" class="text-danger"></span>
+</div>
+<div class="form-group">
+<input type="submit" asp-action="Register" class="btn btn-sm btn-success float-right" value="Register" />
+</div>
+</form>
+</div>
+<div class="card-footer">
+<a asp-action="Login" class="btn btn-block btn-dark">Sign In</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+ <script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿@addTagHelper *,microsoft.aspnetcore.mvc.taghelpers
+@Html.BeginForm("Index","Product",FormMethod.Post) @*html helper*@
+@addTagHelper *,WebApplication5_TagHelpers
+
+
+
+
+<form asp-action="index" asp-controller="Product" method= "post" >
+    <li>
+        <ul>@Html.CheckBox("asf",true)</ul>
+        <ul></ul>
+    </li>
+</form>
+
+
+<cache> Burası cache gelir cache işlemine yardımcı olur.
+    Cache : @DateTime.Now
+</cache>
+
+<br>
+
+@DateTime.Now
+
+
+@*Server her zaman web sayfasını ilgili client bilgisayara bir kere gönderir. Bu nedenle her seferinde sunucunun istek yapıp yormasın diye
+ilgili dosyalar sonraki isteklere browser üzerindeki cachden gelir. Arada dosya güncellendiğinde bu yakalanır takip edilir. İstek neticesinde update edilen
+dosyalar ilgili cache süresinde saklanırlar.*@
+
+<img src="C:\Users\Lenovo\Desktop\BA\CoreMVC\WebApplicationOne\WebApplication5_TagHelpers\wwwroot\indir.jpg" asp-append-version="true" width="200px" alt="asgag">
+
